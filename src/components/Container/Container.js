@@ -29,7 +29,7 @@ export default function Container() {
       <div className="Container">
         <Form handleAddItem={handleAddItem} />
         <Menu />
-        <ListOfTasks tasks={tasks} />
+        <ListOfTasks tasks={tasks} setTasks={setTasks}/>
         <Button setTasks={setTasks} />
       </div>
     );
