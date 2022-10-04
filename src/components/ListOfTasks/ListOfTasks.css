@@ -1,0 +1,30 @@
+.ListOfTasks {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow-y: overlay;
+}
+
+.ListOfTasks ul {
+    width: 100%;
+}
+
+.ListOfTasks .task {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .5px solid #ddd;
+}
+
+.remove-task{
+    background: none;
+    border: none;
+}
+
+.ListOfTasks .task span {
+    font-size: 16px;
+    text-align: left;
+}

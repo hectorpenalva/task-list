@@ -1,0 +1,24 @@
+.Button button {
+    width: 100%;
+    padding: 1em 2em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #e70a0ad3;
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.Button button:hover {
+    background-color: #e70a0aef;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  
+.Button button:active {
+    transform: translateY(-1px);
+  }
