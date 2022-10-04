@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Container.css";
 import Form from "../Form/Form";
+import Menu from "../Menu/Menu";
 import ListOfTasks from "../ListOfTasks/ListOfTasks";
 import Button from "../Button/Button";
 
@@ -27,6 +28,7 @@ export default function Container() {
     return (
       <div className="Container">
         <Form handleAddItem={handleAddItem} />
+        <Menu />
         <ListOfTasks tasks={tasks} />
         <Button setTasks={setTasks} />
       </div>
