@@ -11,4 +11,6 @@
 
     display: grid;
     grid-template-rows: 2fr 1fr 5fr 1fr;
+
+    box-shadow: rgba(233, 220, 220, 0.2) 0px 7px 29px 0px;
 }

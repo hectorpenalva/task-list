@@ -1,4 +1,11 @@
 .Menu a {
     margin-left: 10px;
     font-size: 16px;
+
+    text-decoration: none;
+}
+
+.selected {
+    font-weight: 600;
+    color: red;
 }
