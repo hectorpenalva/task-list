@@ -8,19 +8,19 @@ import Button from "../Button/Button";
 const TASKS = [
   {
     id: 1,
-    important: false,
+    completed: false,
     message: "Hola",
   },
   {
     id: 2,
-    important: false,
+    completed: true,
     message: "Adios",
   },
 ];
 
 export default function Container() {
     const [tasks, setTasks] = useState(TASKS);
-
+    
     const handleAddItem = (item) => {
       setTasks([...tasks, item]);
     };

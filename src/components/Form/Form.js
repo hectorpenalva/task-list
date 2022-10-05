@@ -14,7 +14,7 @@ export default function Form(props) {
 
     handleAddItem({
       id: Math.random(),
-      important: false,
+      completed: false,
       message: newTask,
     });
 
