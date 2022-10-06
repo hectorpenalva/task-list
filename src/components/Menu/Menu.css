@@ -1,11 +1,11 @@
-.Menu a {
+.Menu button {
     margin-left: 10px;
     font-size: 16px;
-
-    text-decoration: none;
+    border: 0;
+    background: none;
 }
 
 .selected {
-    font-weight: 600;
-    color: red;
+    font-weight: 700;
+    color: #3a7bd5;
 }
