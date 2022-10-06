@@ -9,18 +9,19 @@ const TASKS = [
   {
     id: 1,
     completed: false,
-    message: "Hola",
+    message: "Example of a pending task",
   },
   {
     id: 2,
     completed: true,
-    message: "Adios",
+    message: "Example of a completed task",
   },
 ];
 
 export default function Container() {
     const [tasks, setTasks] = useState(TASKS);
-    
+    const [showTasks, setShowTasks] = useState("All");
+
     const handleAddItem = (item) => {
       setTasks([...tasks, item]);
     };
@@ -28,8 +29,8 @@ export default function Container() {
     return (
       <div className="Container">
         <Form handleAddItem={handleAddItem} />
-        <Menu />
-        <ListOfTasks tasks={tasks} setTasks={setTasks}/>
+        <Menu showTasks= {showTasks} setShowTasks={setShowTasks}/>
+        <ListOfTasks showTasks={showTasks} tasks={tasks} setTasks={setTasks}/>
         <Button setTasks={setTasks} />
       </div>
     );

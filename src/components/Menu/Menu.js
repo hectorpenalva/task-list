@@ -1,24 +1,24 @@
-import { useState } from "react";
 import "./Menu.css";
 
-export default function Menu() {
-  const [buttonSelected, setNewButtonSelected] = useState("All");
+export default function Menu(props) {
+  const { showTasks, setShowTasks } = props;
+  
   return (
     <div className="Menu">
       <button 
-        onClick={()=>setNewButtonSelected("All")} 
-        className={buttonSelected === "All" ? "selected" : ""} 
-        href="#">All
+        onClick={()=>setShowTasks("All")} 
+        className={showTasks === "All" ? "selected" : ""}>
+          All
       </button>
       <button 
-        onClick={()=>setNewButtonSelected("Pending")} 
-        className={buttonSelected === "Pending" ? "selected" : ""} 
-        href="#">Pending
+        onClick={()=>setShowTasks("Pending")} 
+        className={showTasks === "Pending" ? "selected" : ""}>
+          Pending
       </button>
       <button 
-        onClick={()=>setNewButtonSelected("Completed")} 
-        className={buttonSelected === "Completed" ? "selected" : ""} 
-        href="#">Completed
+        onClick={()=>setShowTasks("Completed")} 
+        className={showTasks === "Completed" ? "selected" : ""}>
+          Completed
       </button>
     </div>
   );
