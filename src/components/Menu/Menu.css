@@ -1,11 +1,11 @@
 .Menu button {
-    margin-left: 10px;
-    font-size: 16px;
-    border: 0;
-    background: none;
+  margin-left: 10px;
+  font-size: 16px;
+  border: 0;
+  background: none;
 }
 
 .selected {
-    font-weight: 700;
-    color: #3a7bd5;
+  font-weight: 700;
+  color: #3a7bd5;
 }

@@ -25,13 +25,15 @@ export default function Form(props) {
     <div className="Form">
       <form onSubmit={handleSubmit}>
         <input
-          className= "newTaskInput"
+          className="newTaskInput"
           type="text"
           name="task"
           value={newTask}
           onChange={handleChange}
         />
-        <button className= "newTaskButton" disabled={newTask ? "" : "disabled"}>Add </button>
+        <button className="newTaskButton" disabled={newTask ? "" : "disabled"}>
+          Add{" "}
+        </button>
       </form>
     </div>
   );
